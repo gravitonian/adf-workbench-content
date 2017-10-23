@@ -1,8 +1,21 @@
 {
-  "SOME_COMPONENT": {
-    "FIELDS": {
-      "ID": "Id",
-      "NAME": "Name"
+  "DOCUMENT_LIST": {
+    "ACTIONS": {
+      "FOLDER": {
+        "DETAILS": "Details",
+        "DETAILS_FORM": "Details(form)",
+        "DELETE": "Delete",
+        "COPY": "Copy",
+        "MOVE": "Move"
+      },
+      "DOCUMENT": {
+        "DETAILS": "Details",
+        "DETAILS_FORM": "Details(form)",
+        "DOWNLOAD": "Download",
+        "DELETE": "Delete",
+        "COPY": "Copy",
+        "MOVE": "Move"
+      }
     }
   }
 }

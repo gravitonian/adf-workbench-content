@@ -68,7 +68,7 @@ export class AppMenuService {
   }
 
   private isNotLoginRouteOrLoginRouteAndNotLoggedIn(data: any): boolean {
-    return !data.isLogin || data.isLogin && (!this.authService.isEcmLoggedIn() || !this.authService.isBpmLoggedIn());
+    return !data.isLogin || data.isLogin && !this.authService.isLoggedIn();
   }
 
   private isNotEcmRouteOrEcmRouteAndNoAuth(data: any): boolean {
