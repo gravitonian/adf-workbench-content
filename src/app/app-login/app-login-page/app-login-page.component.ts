@@ -25,7 +25,7 @@ export class AppLoginPageComponent implements OnInit {
     this.menuService.fireMenuChanged();
 
     // Now, navigate somewhere...
-    // this.router.navigate(['/some-page']);
+    this.router.navigate(['/repository']);
   }
 
   onLoginError($event) {
