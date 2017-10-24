@@ -19,11 +19,11 @@ export class RepositoryListPageComponent implements OnInit {
   @ViewChild(DocumentListComponent)
   documentList: DocumentListComponent;
 
-  constructor(private notificationService: NotificationService,
-              private contentService: AlfrescoContentService,
-              private dialog: MdDialog,
-              private activatedRoute: ActivatedRoute,
-              private router: Router) {
+  constructor(protected notificationService: NotificationService,
+              protected contentService: AlfrescoContentService,
+              protected dialog: MdDialog,
+              protected activatedRoute: ActivatedRoute,
+              protected router: Router) {
   }
 
   ngOnInit() {

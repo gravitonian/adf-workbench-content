@@ -12,7 +12,7 @@
          [style.position]="'relative'"
          routerLinkActive="selected"
          [routerLink]="[menuItem.path]">
-        <md-icon *ngIf="menuItem.icon">{{menuItem.icon}}</md-icon>
+        <md-icon md-list-icon *ngIf="menuItem.icon">{{menuItem.icon}}</md-icon>
         <span>{{menuItem.title}}</span>
       </a>
     </md-nav-list>
@@ -23,6 +23,8 @@
       <md-icon *ngIf="!mainSideNav.opened">menu</md-icon>
     </button>
     {{(activeMenuItem$ | async)?.title}}
+    <span fxFlex></span>
+    <app-search-bar></app-search-bar>
     <span fxFlex></span>
     <button md-icon-button [mdMenuTriggerFor]="dropdownMenu">
       <md-icon>more_vert</md-icon>
